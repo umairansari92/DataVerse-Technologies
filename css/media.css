@@ -4,7 +4,9 @@
 
 @media screen and (max-width: 1620px) {
   nav ul li a {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    margin: 19px 8px;
+    padding: 14px 16px;
   }
   .hero-text {
     font-size: 2rem;
@@ -68,6 +70,10 @@
     max-width: 60%;
     color: var(--color-grey-2);
   }
+  .portfolios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* For screens with max-width 1050px */
@@ -100,6 +106,10 @@
   .hero_image {
     width: 30%;
     margin-bottom: 149px;
+  }
+  .portfolios {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 /* For screens with max-width 970px */
@@ -139,15 +149,22 @@
   #check:checked ~ ul {
     left: 0;
   }
+  .footer{
+    padding: 50px 20px;
+  }
   .footer-content {
-    flex-direction: column;
+    flex-direction: row;
   }
-  .footer-section {
-    width: 100%;
+  .footer-section.about{
+    margin-left: 30px;
+    max-width: 50%;
   }
-  .footer-section.links {
-    display: block !important;
-    visibility: visible !important;
+  .footer-section.links{
+    margin-right: -65px;
+    max-width: 50%;
+  }
+  .footer-section.links h2{
+    font-size: 1rem;
   }
   .footer-section.links ul {
     display: block !important;
@@ -158,12 +175,36 @@
   .footer-section.links ul li a {
     display: inline !important;
   }
+  .timeline {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .resume .base {
+    width: 100%;
+  }
+ 
+  .about-container .left-about {
+    padding-right: 0rem;
+  }
+
+  .contact-icons .contact-icon {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
+  
+  
+
 
 /* For screens with max-width 700px */
 @media screen and (max-width: 700px) {
-  .container {
-    padding: 7rem 3rem;
+
+  .hero_image {
+    width: 30%;
+    margin-bottom: 149px;
+    margin-left: 200px;
   }
   .about-stats .progress-bars {
     grid-template-columns: repeat(1, 1fr);
@@ -175,7 +216,7 @@
     grid-template-columns: repeat(1, 1fr);
   }
   .main-title h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .main-title h2 span {
     font-size: 3rem;
@@ -183,13 +224,42 @@
   .main-title h2 .bg-text {
     font-size: 4rem;
   }
+  .left-about h4 {
+    font-size: 2.5rem;
+  }
+  .left-about p {
+    font-size: 1.5rem;
+  }  
+  .cv-btn {
+    font-size: 14px;
+    justify-items: center;
+    margin-left:-150px;
+  }
+  .resume .base {
+    width: 100%;
+  }
+  .resume-bg .resume {
+    width: 100%;
+  }
+  .resume .func .work {
+    width: 100%;
+  }
+  .resume .func .edu {
+    width: 100%;
+  }
+  .resume .func .skills-prog ul li .percentage {
+    position: absolute;
+    right: 50%;
+    top: -10px
+  }
+  .portfolios {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 /* For screens with max-width 660px */
 @media screen and (max-width: 660px) {
-  .blogs {
-    grid-template-columns: repeat(1, 1fr);
-  }
   .portfolios {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -197,47 +267,26 @@
 
 /* For screens with max-width 600px */
 @media screen and (max-width: 600px) {
-  header {
-    padding: 0 !important;
-  }
-  .theme-btn {
-    width: 50px;
-    height: 50px;
-  }
-  .header-content {
-    grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 6rem;
-  }
-  .left-header .h-shape {
-    display: none;
-  }
-  .right-header {
-    grid-row: 1;
-    padding-right: 0rem !important;
-    width: 90%;
-    margin: 0 auto;
-  }
-  .right-header .name {
-    font-size: 2.5rem !important;
-    text-align: center;
-    padding-top: 3rem;
-  }
-  .header-content .left-header .image {
-    margin: 0 auto;
-    width: 90%;
-  }
-  .controls {
-    top: auto;
-    bottom: 0;
-    flex-direction: row;
+  .image-container {
     justify-content: center;
-    left: 50%;
-    transform: translateX(-50%);
+    align-items: center;
     width: 100%;
-    background-color: var(--color-grey-5);
   }
-  .controls .control {
-    margin: 1rem 0.3rem;
+  .hero-text {
+    font-size: 1rem;
+    max-width: 100%;
+    margin-top: -172px;
+  }
+  .hero-section {
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 100%;
+    
+  }
+  .hero_image {
+    width: 30%;
+    margin-bottom: 149px;
+    margin-left: 200px;
   }
   .about-container {
     grid-template-columns: repeat(1, 1fr);
@@ -311,69 +360,13 @@
   .main-title h2 .bg-text {
     font-size: 2.3rem;
   }
-}
-
-/* Redundant max-width 600px section removed */
-
-/* For screens with max-width 660px */
-@media screen and (max-width: 660px) {
-  .blogs {
-    grid-template-columns: repeat(1, 1fr);
+  .footer-section.about{
+    margin-left: -30px;
+    /* max-width: 100%; */
   }
-  .portfolios {
-    grid-template-columns: repeat(1, 1fr);
+  .footer-section.links{
+    margin-right: -35px;
+    max-width: 50%;
   }
 }
 
-/* Redundant max-width 700px section removed */
-
-/* For screens with max-width 1070px */
-@media screen and (max-width: 1070px) {
-  .about-container {
-    grid-template-columns: repeat(1, 1fr);
-    .right-about {
-      padding-top: 2.5rem;
-    }
-  }
-  .main-title h2 {
-    font-size: 4rem;
-    span {
-      font-size: 4rem;
-    }
-    .bg-text {
-      font-size: 4.5rem;
-    }
-  }
-}
-
-/* For screens with max-width 970px */
-@media screen and (max-width: 970px) {
-  .container {
-    padding: 7rem 6rem;
-  }
-  .about-container .left-about {
-    padding-right: 0rem;
-  }
-  .header-content {
-    grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 6rem;
-  }
-  .left-header .h-shape {
-    display: none;
-  }
-  .left-header .image {
-    width: 90% !important;
-    margin: 0 auto !important;
-  }
-  .right-header {
-    grid-row: 1;
-    padding-right: 0rem !important;
-    width: 90%;
-    margin: 0 auto;
-  }
-  .right-header .name {
-    font-size: 2.5rem !important;
-    text-align: center;
-    padding-top: 3rem;
-  }
-}
