@@ -267,6 +267,8 @@
 
 /* For screens with max-width 600px */
 @media screen and (max-width: 600px) {
+ 
+ /* Hero Section */
   .image-container {
     justify-content: center;
     align-items: center;
@@ -283,11 +285,19 @@
     max-width: 100%;
     
   }
+  .typing-container {
+    align-items: center;
+    font-size: 1.5rem;
+    white-space:wrap;
+    overflow: hidden;
+  }
   .hero_image {
     width: 30%;
     margin-bottom: 149px;
     margin-left: 200px;
   }
+
+  /* About Section */
   .about-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -305,9 +315,9 @@
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
   }
-  .container {
-    padding: 2rem 2.5rem !important;
-  }
+  .cv-btn {
+    font-size: 10px;
+  
   .about-stats .progress-bars {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -316,27 +326,8 @@
     padding-bottom: 6rem;
     margin-top: 1rem;
   }
-  .blogs {
-    grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 6rem;
-  }
-  .contact-content-con {
-    flex-direction: column;
-  }
-  .contact-content-con .right-contact {
-    margin-left: 0;
-    margin-top: 2.5rem;
-  }
-  .contact-content-con .right-contact .i-c-2 {
-    flex-direction: column;
-  }
-  .contact-content-con .right-contact .i-c-2 :last-child {
-    margin-left: 0;
-    margin-top: 1.5rem;
-  }
-  .contact-content-con .right-contact {
-    margin-bottom: 6rem;
-  }
+  
+  /* Contact Section */
   .contact-item {
     flex-direction: column;
     margin: 1rem 0;
@@ -360,6 +351,8 @@
   .main-title h2 .bg-text {
     font-size: 2.3rem;
   }
+
+  /* Footer Section */
   .footer-section.about{
     margin-left: -30px;
     /* max-width: 100%; */
@@ -368,5 +361,10 @@
     margin-right: -35px;
     max-width: 50%;
   }
+}
+.container {
+  padding: 2rem 2.5rem !important;
+}
+
 }
 
