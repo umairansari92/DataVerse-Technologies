@@ -252,6 +252,7 @@
     right: 50%;
     top: -10px
   }
+ 
   .portfolios {
     margin-left: 10px;
     margin-right: 10px;
@@ -259,10 +260,16 @@
 }
 
 /* For screens with max-width 660px */
-@media screen and (max-width: 660px) {
-  .portfolios {
-    grid-template-columns: repeat(1, 1fr);
+@media screen and (max-width: 400px) {
+  .resume .func .interests-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
+  .resume .func .skills-prog ul li .percentage {
+    position: absolute;
+    right: -15%;
+    top: -10px;
+}
 }
 
 /* For screens with max-width 600px */
@@ -317,7 +324,7 @@
   }
   .cv-btn {
     font-size: 10px;
-  
+  }
   .about-stats .progress-bars {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -353,6 +360,11 @@
   }
 
   /* Footer Section */
+
+  .footer {
+    padding: 50px 20px;
+    max-width: 100%;
+}
   .footer-section.about{
     margin-left: -30px;
     /* max-width: 100%; */
@@ -361,9 +373,14 @@
     margin-right: -35px;
     max-width: 50%;
   }
-}
 .container {
   padding: 2rem 2.5rem !important;
+}
+
+.resume .func .skills-prog ul li .percentage {
+  position: absolute;
+  right: 10%;
+  top: -10px;
 }
 
 }
