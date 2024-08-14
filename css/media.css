@@ -40,6 +40,10 @@
   .hero_image {
     margin-left: 400px;
   }
+
+  .contact-content-con .right-contact .i-c-2 {
+    display: flex;
+  }
 }
 /* For screens with max-width 1385px */
 
@@ -193,6 +197,25 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
+  .main-title h2 {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+  .main-title h2 .bg-text {
+    font-size: 4.3rem;
+  }
+  .contact-content-con {
+    display: flex;
+    padding-top: 3.5rem;
+    flex-direction: column;
+}
+  .submit-btn {
+    position: absolute;
+    top: 135%;
+    left: 25%;
+  }
 }
   
   
@@ -257,6 +280,12 @@
     margin-left: 10px;
     margin-right: 10px;
   }
+
+  .submit-btn {
+    position: absolute;
+    top: 126%;
+    left: 20%;
+}
 }
 
 /* For screens with max-width 660px */
@@ -359,6 +388,13 @@
     font-size: 2.3rem;
   }
 
+  .submit-btn {
+    position: absolute;
+    top: 150%;
+    left: 20%;
+}
+}
+
   /* Footer Section */
 
   .footer {
@@ -383,5 +419,4 @@
   top: -10px;
 }
 
-}
 
