@@ -153,21 +153,21 @@
   #check:checked ~ ul {
     left: 0;
   }
-  .footer{
+  .footer {
     padding: 50px 20px;
   }
   .footer-content {
     flex-direction: row;
   }
-  .footer-section.about{
+  .footer-section.about {
     margin-left: 30px;
     max-width: 50%;
   }
-  .footer-section.links{
+  .footer-section.links {
     margin-right: -65px;
     max-width: 50%;
   }
-  .footer-section.links h2{
+  .footer-section.links h2 {
     font-size: 1rem;
   }
   .footer-section.links ul {
@@ -180,7 +180,6 @@
     display: inline !important;
   }
   .timeline {
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,7 +187,7 @@
   .resume .base {
     width: 100%;
   }
- 
+
   .about-container .left-about {
     padding-right: 0rem;
   }
@@ -210,20 +209,16 @@
     display: flex;
     padding-top: 3.5rem;
     flex-direction: column;
-}
+  }
   .submit-btn {
     position: absolute;
-    top: 135%;
+    top: 115%;
     left: 25%;
   }
 }
-  
-  
-
 
 /* For screens with max-width 700px */
 @media screen and (max-width: 700px) {
-
   .hero_image {
     width: 30%;
     margin-bottom: 149px;
@@ -252,11 +247,11 @@
   }
   .left-about p {
     font-size: 1.5rem;
-  }  
+  }
   .cv-btn {
     font-size: 14px;
     justify-items: center;
-    margin-left:-150px;
+    margin-left: -150px;
   }
   .resume .base {
     width: 100%;
@@ -273,9 +268,9 @@
   .resume .func .skills-prog ul li .percentage {
     position: absolute;
     right: 50%;
-    top: -10px
+    top: -10px;
   }
- 
+
   .portfolios {
     margin-left: 10px;
     margin-right: 10px;
@@ -283,28 +278,14 @@
 
   .submit-btn {
     position: absolute;
-    top: 126%;
+    top: 110%;
     left: 20%;
-}
-}
-
-/* For screens with max-width 660px */
-@media screen and (max-width: 400px) {
-  .resume .func .interests-items {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
   }
-  .resume .func .skills-prog ul li .percentage {
-    position: absolute;
-    right: -15%;
-    top: -10px;
-}
 }
 
 /* For screens with max-width 600px */
 @media screen and (max-width: 600px) {
- 
- /* Hero Section */
+  /* Hero Section */
   .image-container {
     justify-content: center;
     align-items: center;
@@ -319,12 +300,11 @@
     display: inline-flex;
     flex-direction: column;
     max-width: 100%;
-    
   }
   .typing-container {
     align-items: center;
     font-size: 1.5rem;
-    white-space:wrap;
+    white-space: wrap;
     overflow: hidden;
   }
   .hero_image {
@@ -362,7 +342,7 @@
     padding-bottom: 6rem;
     margin-top: 1rem;
   }
-  
+
   /* Contact Section */
   .contact-item {
     flex-direction: column;
@@ -390,33 +370,57 @@
 
   .submit-btn {
     position: absolute;
-    top: 150%;
+    top: 127%;
     left: 20%;
-}
+  }
 }
 
-  /* Footer Section */
+/* Footer Section */
 
-  .footer {
-    padding: 50px 20px;
-    max-width: 100%;
-}
-  .footer-section.about{
-    margin-left: -30px;
+.footer-section {
+  width: 100%;
+  .footer-section.about {
+    /* margin-left: -30px; */
     max-width: 100%;
   }
-  .footer-section.links{
+  .footer-section.links {
     margin-right: -35px;
     max-width: 50%;
   }
-.container {
-  padding: 2rem 2.5rem !important;
+  .container {
+    padding: 2rem 2.5rem !important;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .resume .func .skills-prog ul li .percentage {
+    position: absolute;
+    right: 10%;
+    top: -10px;
+  }
 }
 
-.resume .func .skills-prog ul li .percentage {
-  position: absolute;
-  right: 10%;
-  top: -10px;
+/* For screens with max-width 400px */
+@media screen and (max-width: 400px) {
+  .resume .func .interests-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .resume .func .skills-prog ul li .percentage {
+    position: absolute;
+    right: -15%;
+    top: -10px;
+  }
+
+  .submit-btn {
+    position: absolute;
+    top: 135%;
+    left: 10%;
+  }
 }
-
-
