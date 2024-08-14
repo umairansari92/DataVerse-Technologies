@@ -417,6 +417,10 @@
     right: -15%;
     top: -10px;
   }
+  .footer-section.about {
+    margin-left: 16px;
+    max-width: 100%;
+}
 
   .submit-btn {
     position: absolute;
