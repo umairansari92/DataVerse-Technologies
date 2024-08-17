@@ -211,18 +211,17 @@
     flex-direction: column;
   }
 
-  .contact-content-con .right-contact .i-c-2{
+  .contact-content-con .right-contact .i-c-2 {
     flex-direction: column;
-}
-.contact-content-con .right-contact .i-c-2 :last-child{
+  }
+  .contact-content-con .right-contact .i-c-2 :last-child {
     margin-left: 0;
     margin-top: 1.5rem;
-}
-
+  }
 
   .submit-btn {
     position: absolute;
-    top: 120%;
+    top: 141%;
     left: 25%;
   }
 }
@@ -322,8 +321,6 @@
     margin-bottom: 149px;
     margin-left: 200px;
   }
-
-  /* About Section */
   .about-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -353,7 +350,6 @@
     margin-top: 1rem;
   }
 
-  /* Contact Section */
   .contact-item {
     flex-direction: column;
     margin: 1rem 0;
@@ -378,24 +374,19 @@
     font-size: 2.3rem;
   }
 
-  .contact-content-con{
+  .contact-content-con {
     flex-direction: column;
-    .right-contact{
-        margin-left: 0;
-        margin-top: 2.5rem;
+    .right-contact {
+      margin-left: 0;
+      margin-top: 2.5rem;
     }
-    
-}
-
+  }
 
   .submit-btn {
     position: absolute;
-    top: 140%;
+    top: 162%;
     left: 20%;
   }
-}
-
-/* Footer Section */
 
 .footer-section {
   width: 100%;
@@ -425,7 +416,7 @@
     top: -10px;
   }
 }
-
+}
 /* For screens with max-width 400px */
 @media screen and (max-width: 400px) {
   .resume .func .interests-items {
@@ -440,7 +431,7 @@
   .footer-section.about {
     margin-left: 16px;
     max-width: 100%;
-}
+  }
 
   .submit-btn {
     position: absolute;
@@ -451,16 +442,15 @@
 
 /* For screens with max-width 350px */
 @media screen and (max-width: 350px) {
-
   .submit-btn {
     position: absolute;
     top: 193%;
     left: -2%;
   }
-  
+
   .cv-btn {
     font-size: 14px;
     justify-items: center;
-    margin-left: -340px
+    margin-left: -340px;
   }
 }

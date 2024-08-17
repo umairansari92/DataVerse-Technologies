@@ -504,11 +504,11 @@ nav ul li a:hover:before {
 .footer-content {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .footer-section {
-  width: 30%;
+  width: 10%;
   margin-bottom: 20px;
   margin-left: 3rem;
 }
