@@ -454,7 +454,13 @@
 
   .submit-btn {
     position: absolute;
-    top: 150%;
-    left: 10%;
+    top: 193%;
+    left: -2%;
+  }
+  
+  .cv-btn {
+    font-size: 14px;
+    justify-items: center;
+    margin-left: -340px
   }
 }
