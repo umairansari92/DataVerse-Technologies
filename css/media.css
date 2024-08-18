@@ -156,8 +156,14 @@
   .footer {
     padding: 50px 20px;
   }
+  .footer-section {
+    width: 100%;
+  }
   .footer-content {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
   }
   .footer-section.about {
     margin-left: 30px;
@@ -287,7 +293,7 @@
 
   .submit-btn {
     position: absolute;
-    top: 117%;
+    top: 137%;
     left: 20%;
   }
 }
@@ -435,7 +441,7 @@
 
   .submit-btn {
     position: absolute;
-    top: 145%;
+    top: 170%;
     left: 10%;
   }
 }
@@ -444,7 +450,7 @@
 @media screen and (max-width: 350px) {
   .submit-btn {
     position: absolute;
-    top: 193%;
+    top: 178%;
     left: -2%;
   }
 
