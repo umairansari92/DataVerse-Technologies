@@ -789,19 +789,21 @@ nav ul li a:hover:before {
 .resume h3 {
   color: #ffb300;
   margin: 10px 0;
-  text-transform: lowercase;
+  text-transform: none;
   font-size: 1.25em;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .resume-bg .resume {
-  width: 960px;
+  width: 1200px;
   background: #000000;
   color: #ffffff;
   margin: 20px auto;
   box-shadow: 10px 10px #0e1442;
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .resume .base,
@@ -888,6 +890,45 @@ nav ul li a:hover:before {
   color: #333542;
 }
 
+.resume .base .profile .info .specialization {
+  font-size: 20px;
+  color: #00adb5;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.resume .base .about .skills-section {
+  padding: 20px;
+  background-color: #162447;
+  color: #ffffff;
+}
+
+.resume .base .about .skills-section h2 {
+  font-size: 28px;
+  color: #ffc947;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.resume .base .about .skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.resume .base  .about .skills-list li {
+  font-size: 14px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.resume .base .about .skills-list i {
+  margin-right: 10px;
+  color: #00adb5;
+}
+
 .resume .base .contact div {
   line-height: 24px;
 }
@@ -953,12 +994,12 @@ nav ul li a:hover:before {
   display: inline-block;
   font-size: 30px;
   background: #ffb300;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  line-height: 60px;
+  line-height: 50px;
   color: #283593;
-  margin: 0 10px 10px 10px;
+  margin: 0 5px 5px 5px;
   transition-duration: 0.3s;
 }
 
