@@ -518,7 +518,9 @@ nav ul li a:hover:before {
 }
 
 .footer-section.about {
-  flex: 1;
+  display: grid;
+  align-content: space-around;
+  justify-content: center;
 }
 
 .footer-section.about .logo-text {
@@ -545,8 +547,7 @@ nav ul li a:hover:before {
   margin-bottom: 10px;
 }
 .footer-section.links {
-  display: block !important;
-  visibility: visible !important;
+ width: 45%;
 }
 .footer-section.links ul li a {
   list-style: disc;
