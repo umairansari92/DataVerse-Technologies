@@ -180,7 +180,7 @@ nav ul li a:hover:before {
   display: flex;
   margin-top: 1rem;
   color: #fff;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img\pxfuel.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(109, 96, 96, 0.7)), url("../img/pxfuel.jpg");
   clip-path: polygon(1% 0%, 100% 0%, 100% 99%, 72% 82%, 1% 99%);
   background-size: cover;
 }
