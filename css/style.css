@@ -199,7 +199,7 @@ nav ul li a:hover:before {
 
 /* Highlighted span within hero text */
 .hero-text h1 span {
-  color: #273947;
+  color: #72777a;
 }
 
 /* Container for centering the image */
@@ -212,7 +212,6 @@ nav ul li a:hover:before {
 /* Image styling */
 .hero_image {
   width: 40%;
-  /* max-width: 800px; */
   border-radius: 5%;
   border: 1px solid #fff;
   margin-left: 550px;
@@ -225,7 +224,7 @@ nav ul li a:hover:before {
   font-size: 3rem;
   white-space: nowrap;
   overflow: hidden;
-  color: #515a85;
+  color: #72777a;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 800;
