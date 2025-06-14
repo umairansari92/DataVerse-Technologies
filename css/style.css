@@ -1047,6 +1047,10 @@ nav ul li a:hover:before {
   transition-duration: 0.3s;
 }
 
+.resume .func .edu-work{
+  display: flex;
+  flex-wrap: wrap;
+}
 .resume .func .work,
 .resume .func .edu {
   float: left;
